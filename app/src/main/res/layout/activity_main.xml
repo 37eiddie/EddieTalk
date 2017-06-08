@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context="com.sds.eddietalk.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/gallery_container"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_orange_light">
+        <ImageButton
+            android:id="@+id/gallery_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gallery"
+            />
+        <TextView
+            android:id="@+id/gallery_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="형배 얼굴보기"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/call_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/gallery_container"
+        android:background="@android:color/holo_red_light">
+
+        <TextView
+            android:id="@+id/call_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20dp"
+            android:text="형배랑 통화하기"
+            android:textSize="30dp"/>
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toRightOf="@id/call_text"
+            android:scaleType="fitCenter"
+            android:src="@drawable/call"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/send_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/call_container"
+        android:background="@android:color/holo_blue_light">
+        <ImageButton
+            android:id="@+id/send_text_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/message"
+            />
+
+        <TextView
+            android:id="@+id/send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/send_text_button"
+            android:paddingStart="20dp"
+            android:text="형배랑 대화하기"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/money_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/send_text_container"
+        android:background="@android:color/holo_green_light">
+        <TextView
+            android:id="@+id/send_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/send_text_button"
+            android:paddingEnd="40dp"
+            android:text="형배 후원하기"
+            android:textSize="30dp"/>
+
+        <ImageButton
+            android:id="@+id/send_money_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/donation"
+            />
+    </LinearLayout>
+</RelativeLayout>
