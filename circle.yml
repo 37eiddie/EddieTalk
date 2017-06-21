@@ -28,3 +28,9 @@ machine:
 test:
   override:
     - ./gradlew assembleDebug
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: eddie-talk
